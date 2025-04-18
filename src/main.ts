@@ -26,10 +26,6 @@ const routes: RouteRecordRaw[] = [
     name: 'about',
     component: () => import('./views/AboutView.vue')
   },
-  {
-    path: '/:catchAll(.*)',
-    redirect: '/'
-  }
   // Add other routes as needed
 ]
 
