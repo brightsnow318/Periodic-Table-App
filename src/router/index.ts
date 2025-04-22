@@ -4,13 +4,13 @@ import PeriodicTable from '../../src/components/PeriodicTable.vue'
 
 const routes: RouteRecordRaw[] = [
   {
-    path: '/',
-    redirect: '/periodic-table'
-  },
-  {
     path: '/periodic-table',
     name: 'PeriodicTable',
     component: PeriodicTable
+  },
+  {
+    path: '/',
+    redirect: '/periodic-table'
   },
   {
     path: '/about',

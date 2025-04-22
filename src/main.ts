@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './assets/main.css'
 import './components/PeriodicTable.vue'
-
+import './assets/main.css'
 import { createPinia } from 'pinia'
 import { createApp } from 'vue'
 import type { RouteRecordRaw } from 'vue-router' // Import RouteRecordRaw as a type only

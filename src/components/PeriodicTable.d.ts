@@ -23,19 +23,21 @@ export interface PeriodicTableMethods {
   closeDetails: () => void
 }
 
-export interface PeriodicTableComputed {
-  filteredElements: ComputedRef<ElementData[]>
-  isElementVisible: (element: ElementData) => boolean
-  isHighlighted: (elementBlock: string | undefined) => boolean
-  searchQuery: Ref<string>
-  selectedElement: Ref<ElementData | null>
-}
 
 export interface PeriodicTableComposition {
   props: PeriodicTableProps
   computed: PeriodicTableComputed
   methods: PeriodicTableMethods
   data: PeriodicTableData
+}
+
+
+export interface PeriodicTableComputed {
+  filteredElements: ComputedRef<ElementData[]>
+  isElementVisible: (element: ElementData) => boolean
+  isHighlighted: (elementBlock: string | undefined) => boolean
+  searchQuery: Ref<string>
+  selectedElement: Ref<ElementData | null>
 }
 
 declare const PeriodicTable: import('vue').DefineComponent<
